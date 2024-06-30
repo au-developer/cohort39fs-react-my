@@ -1,8 +1,9 @@
 import "./App.css";
+import Lesson02 from "./lessons/lesson02/Lesson02";
 function App() {
   return (
     <div className="App">
-        <p>This is our first React app</p>
+      <Lesson02 />
     </div>
   );
 }
