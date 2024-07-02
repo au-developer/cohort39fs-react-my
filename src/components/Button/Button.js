@@ -48,16 +48,29 @@
 
 
 
+// import "./styles.css";
+
+// function Button({ children, type, buttonName = "Send" }) {
+//   const buttonClass = type === "Delete" ? "delete-button" : "main-button";
+  
+//   return (
+//     <button className={`button-component ${buttonClass}`}>
+//       {/* Children example */}
+//       {/* {children} */}
+//       {buttonName}
+//     </button>
+//   );
+// }
+
+// export default Button;
+
+
 import "./styles.css";
 
-function Button({ children, type, buttonName = "Send" }) {
-  const buttonClass = type === "Delete" ? "delete-button" : "main-button";
-  
+function Button({ type = "button", name = "Send", onClick }) {  
   return (
-    <button className={`button-component ${buttonClass}`}>
-      {/* Children example */}
-      {/* {children} */}
-      {buttonName}
+    <button onClick={onClick} type={type} className="button-component">
+      {name}
     </button>
   );
 }
