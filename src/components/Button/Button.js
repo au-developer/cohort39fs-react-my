@@ -1,3 +1,4 @@
+// ------------------------------------------------------Consultation_01
 // import "./styles.css";
 
 // function Button({buttonName}) {
@@ -32,13 +33,13 @@
 //        // 4 способ - добавляем тернарный оператор в переменную
 //       //return <button className={buttonClass}>{buttonName}</button>;
 
-// // 4 способ -оптимизирован 
-// // const buttonClass = 
+// // 4 способ -оптимизирован
+// // const buttonClass =
 // //     buttonName === "Delete"
 // //       ? "delete-button"
 // //       : "main-button";
 
-// // 4 способ -оптимизирован 
+// // 4 способ -оптимизирован
 //       //return <button className={`button-component ${buttonClass}`}>{buttonName}</button>;
 
 //       return <button className="button-component main-button">Send</button>;
@@ -46,13 +47,11 @@
 
 // export default Button;
 
-
-
 // import "./styles.css";
 
 // function Button({ children, type, buttonName = "Send" }) {
 //   const buttonClass = type === "Delete" ? "delete-button" : "main-button";
-  
+
 //   return (
 //     <button className={`button-component ${buttonClass}`}>
 //       {/* Children example */}
@@ -64,15 +63,23 @@
 
 // export default Button;
 
+// -------------------------------------------------------------Lesson_03 props
+// import "./styles.css";
+
+// function Button({buttonName}) {
+//   console.log(buttonName);
+//   return <button className={`button-component main-button`}>{buttonName}</button>;
+// }
+
+// export default Button;
+
+// -------------------------------------------------------------Lesson_03 children
 
 import "./styles.css";
 
-function Button({ type = "button", name = "Send", onClick }) {  
-  return (
-    <button onClick={onClick} type={type} className="button-component">
-      {name}
-    </button>
-  );
+function Button({children, buttonName = "example default"}) {
+  
+  return <button className={`button-component main-button`}>{children} {buttonName}</button>;
 }
 
 export default Button;

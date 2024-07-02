@@ -1,22 +1,13 @@
-import SimponsCard from "../../components/SimpsonsCard/SimpsonsCard";
+import SimpsonsCard from "../../components/SimpsonsCard/SimpsonsCard";
 import Button from "../../components/Button/Button";
 import "./styles.css";
 
-// const add = (a, b) => {
-//   console.log(a + b);
-// };
-
-// add(1, 3);
-// add(5, 5);
-// add(3, 3);
-// add(4, 4);
-
 function Lesson03() {
-  const homerSimpson = {
+  const homer = {
     firstName: "Homer",
     lastName: "Simpson",
-    job: "Nuclear Safety Inspector",
-    hobby: "beer Duff",
+    job: "NSI",
+    hobby: "Drinking",
     avatar:
       "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
   };
@@ -37,39 +28,54 @@ function Lesson03() {
     avatar:
       "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png",
   };
+// ---------------------------------------------свойства передем по отдельности
 
-  return (
-    <div className="lesson03-wrapper">
-      {/* <SimponsCard
-        firstName={homerSimpson.firstName}
-        lastName={homerSimpson.lastName}
-        hobby={homerSimpson.hobby}
-        job={homerSimpson.job}
-        avatar={homerSimpson.avatar}
-      />
-      <SimponsCard
-        firstName={margeSimpson.firstName}
-        lastName={margeSimpson.lastName}
-        hobby={margeSimpson.hobby}
-        job={margeSimpson.job}
-        avatar={margeSimpson.avatar}
-      />
-      <SimponsCard
-        avatar={bartSimpson.avatar}
-        firstName={bartSimpson.firstName}
-        lastName={bartSimpson.lastName}
-        job={bartSimpson.job}
-        hobby={bartSimpson.hobby}
-      /> */}
-      <SimponsCard userData={homerSimpson} />
-      <SimponsCard userData={margeSimpson} />
-      <SimponsCard userData={bartSimpson} />
-      {/* Children example */}
-      {/* <Button>Send data</Button> */}
-      <Button />
-      <Button buttonName={"Update data"} />
-    </div>
-  );
+  // return (
+  //   <div className="lesson03-wrapper">
+  //     <SimpsonsCard
+  //       avatar={homer.avatar}
+  //       firstName={homer.firstName}
+  //       lastName={homer.lastName}
+  //       hobby={homer.hobby}
+  //       job={homer.job}
+  //     />
+  //     <SimpsonsCard
+  //       avatar={margeSimpson.avatar}
+  //       firstName={margeSimpson.firstName}
+  //       lastName={margeSimpson.lastName}
+  //       hobby={margeSimpson.hobby}
+  //       job={margeSimpson.job}
+  //     />
+  //     <SimpsonsCard
+  //       avatar={bartSimpson.avatar}
+  //       firstName={bartSimpson.firstName}
+  //       lastName={bartSimpson.lastName}
+  //       hobby={bartSimpson.hobby}
+  //       job={bartSimpson.job}
+  //     />
+  //   </div>
+  // );
+
+// ---------------------------------------------------------------свойства передаем обьектом 
+return (
+  <div className="lesson03-wrapper">
+    <SimpsonsCard userData = {homer}/>
+    <SimpsonsCard userData = {margeSimpson}/>
+    <SimpsonsCard userData = {bartSimpson}/>
+
+   {/* Класический подход */}
+    {/* <Button buttonName={"Send info"}/>
+    <Button buttonName={"Delete"}/>
+    <Button buttonName={"Update"}/> */}
+
+  {/* Через CHILDREN */}
+  <Button>Send info</Button>
+  <Button/>
+  <Button buttonName={"Update"}/>
+
+  </div>
+);
 }
+
 
 export default Lesson03;

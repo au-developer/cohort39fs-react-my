@@ -1,33 +1,33 @@
-import "./styles.css";
+// import "./styles.css";
 
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
-function Counter() {
-// let counter = 0;
+// function Counter() {
+// // let counter = 0;
 
-// const onPlus = ()=>{
-//   counter +=1;
-// };
-// const onMinus = ()=>{
-//   counter -=1;
-// };
-// Функция 
-const state 
-
-console.log(counter);
+// // const onPlus = ()=>{
+// //   counter +=1;
+// // };
+// // const onMinus = ()=>{
+// //   counter -=1;
+// // };
+// // Функция 
 
 
-  return (
-    <div className="counter-wrapper">
-      <div className="button-control">
-        <Button name="-" onClick={() => {}} />
-      </div>
-      <p className="count">0</p>
-      <div className="button-control">
-        <Button name="+" onClick={() => {}} />
-      </div>
-    </div>
-  );
-}
+// console.log(counter);
 
-export default Counter;
+
+//   return (
+//     <div className="counter-wrapper">
+//       <div className="button-control">
+//         <Button name="-" onClick={() => {}} />
+//       </div>
+//       <p className="count">0</p>
+//       <div className="button-control">
+//         <Button name="+" onClick={() => {}} />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Counter;
