@@ -75,11 +75,25 @@
 
 // -------------------------------------------------------------Lesson_03 children
 
+// import "./styles.css";
+
+// function Button({children, buttonName = "example default"}) {
+  
+//   return <button className={`button-component main-button`}>{children} {buttonName}</button>;
+// }
+
+// export default Button;
+
+
+// -------------------------------------------------------Homework03t
 import "./styles.css";
 
-function Button({children, buttonName = "example default"}) {
-  
-  return <button className={`button-component main-button`}>{children} {buttonName}</button>;
+function Button({ type = "button", name = "Send", onClick }) {  
+  return (
+    <button onClick={onClick} type={type} className="button-component">
+      {name}
+    </button>
+  );
 }
 
 export default Button;
