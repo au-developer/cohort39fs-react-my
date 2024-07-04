@@ -3,7 +3,8 @@ import "./App.css";
 //import Lesson02 from "./lessons/lesson02/Lesson02";
 //import Lesson03 from "./lessons/lesson03/Lesson03"
 //import Lesson04 from "./lessons/lesson04/Lesson04"
-import Lesson05 from "./lessons/lesson05/Lesson05"
+//import Lesson05 from "./lessons/lesson05/Lesson05"
+import Consultation02 from "./consultations/Consultation02/Consultation02"
 
 // Homeworks
 // import Homework02 from "./homeworks/Homework02/Homework02";
@@ -22,7 +23,7 @@ function App() {
       {/* <Lesson03/> */}
       {/* <Homework03t/> */}
        {/* <Lesson04/> */}
-       <Lesson05/>
+  <Consultation02/>
     </div>
   );
 }
